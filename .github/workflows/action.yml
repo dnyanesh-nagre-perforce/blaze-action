@@ -1,1 +1,25 @@
+name: github-action
+env:
+  apiKey: ""
+  apiSecret: ""
+  testID: ""
+  continuePipeline: "false"
+  showTailLog: "false"
+  
+on: push
+jobs:
+  github-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: PerforceAction
+        uses: dnyanesh-nagre-perforce/blaze-action@V1.0
+        id: run-test
+        with:
+          apiKey: ${{env.apiKey}}
+          apiSecret: ${{env.apiSecret}}
+          testID: ${{env.testID}}
+          continuePipeline: ${{env.continuePipeline}}
+          showTailLog: ${{env.showTailLog}}
 
