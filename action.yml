@@ -1,5 +1,5 @@
 # action.yml
-name: 'Blaze'
+name: 'PerforceAction'
 description: 'Run Blazemeter Test from GitHub Action'
 inputs:
   apiKey: 
