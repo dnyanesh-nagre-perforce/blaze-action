@@ -1,3 +1,4 @@
+This repository is used to create the github action for the Dev env not for the production. For production release, please use https://github.com/Blazemeter/github-action repo.
 # Run Blazemeter Test Action
 
 This action allows you to run Blazemeter existing Test
