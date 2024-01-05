@@ -5,8 +5,7 @@ env:
   testID: "13797457"
   continuePipeline: "false"
   showTailLog: "false"
-  uploadFileCheck: "true"
-  inputstartfile: "../taurus.yml"
+  inputstartfile: "https://github.com/dnyanesh-nagre-perforce/blaze-action/blob/main/taurus.yml"
   
 on: push
 jobs:
@@ -24,5 +23,4 @@ jobs:
           testID: ${{env.testID}}
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
-          uploadFileCheck: ${{env.uploadFileCheck}}
           inputstartfile: ${{env.inputstartfile}}
