@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: PerforceAction
-        uses: dnyanesh-nagre-perforce/blaze-action@v2.0
+        uses: dnyanesh-nagre-perforce/blaze-action@v2.1
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
