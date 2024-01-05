@@ -2,11 +2,11 @@ name: github-action
 env:
   apiKey: "17367bcc353b421e3b2a51d8"
   apiSecret: "f7f1e77340e84a3ed0b8c493fd228a1b75aa1b75d2a42f4855ad230918190a356cbb796b"
-  testID: "13794733"
+  testID: "13797457"
   continuePipeline: "false"
   showTailLog: "false"
-  locations: "azure-east-au-1,ap-south-1"
-  dedicatedIP: "false"
+  uploadFileCheck: "true"
+  inputAllFiles: "https://github.com/dnyanesh-nagre-perforce/blaze-action/taurus.yml"
   
 on: push
 jobs:
@@ -24,5 +24,5 @@ jobs:
           testID: ${{env.testID}}
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
-          locations: ${{env.locations}}
-          dedicatedIP: ${{env.dedicatedIP}}
+          uploadFileCheck: ${{env.uploadFileCheck}}
+          inputAllFiles: ${{env.inputAllFiles}}
