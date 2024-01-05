@@ -1,0 +1,47 @@
+execution:
+- executor: jmeter
+  scenario: api-testing
+  concurrency: 50
+  ramp-up: 1m
+  hold-for: 3m
+  
+scenarios:
+  api-testing:
+    headers: # global headers
+      Authorization: Bearer 83c29484-f5fa-4d2a-b4d6-7eae7e43bcd3
+    default-address: "https://api.runscope.com"
+    variables:
+      bucket_id: 9pbitdph8iu2
+    requests:
+    - url: /buckets/${bucket_id}/tests/2442404e-f013-430d-9460-5ab152b0bbfc
+      method: GET
+      label: Request1
+      assert:
+       - contains: 
+         - 200
+         subject: http-code
+      assert-jsonpath:
+       - jsonpath: "$.data.name" 
+         validate: true 
+         expected-value: "US California" 
+         regexp: true  
+         expect-null: false  
+         invert: false
+
+    - url: /buckets/${bucket_id}/tests
+      method: POST
+      label: Request2
+      headers:
+        Content-Type: application/json
+      body: '{"name": "Test1","description": "My Taurus Test"}'
+      assert:
+       - contains: 
+         - 201
+         subject: http-code
+      assert-jsonpath:
+       - jsonpath: "$.data.name" 
+         validate: true 
+         expected-value: "Test1" 
+         regexp: true  
+         expect-null: false  
+         invert: false
