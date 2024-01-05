@@ -6,7 +6,7 @@ env:
   continuePipeline: "false"
   showTailLog: "false"
   locations: "azure-east-au-1"
-  dedicatedIP: "false"
+  dedicatedIP: "true"
   
 on: push
 jobs:
