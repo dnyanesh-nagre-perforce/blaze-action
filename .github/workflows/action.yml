@@ -5,8 +5,8 @@ env:
   testID: "13794733"
   continuePipeline: "false"
   showTailLog: "false"
-  locations: "azure-east-au-1, ap-south-1"
-  dedicatedIP: "true"
+  locations: "azure-east-au-1,ap-south-1"
+  dedicatedIP: "false"
   
 on: push
 jobs:
