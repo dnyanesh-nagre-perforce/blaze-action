@@ -114,6 +114,14 @@ inputs:
     description: 'azure team web hook url'
     required: false
     default: 'false'
+  locations:
+    description: 'To define the location on which test will run '
+    required: false
+    default: ''
+  dedicatedIP:
+    description: 'To use the dedicatedIP for the selected location'
+    required: false
+    default: 'false'
   
 runs:
   using: 'docker'
