@@ -5,7 +5,7 @@ env:
   testID: "13794733"
   continuePipeline: "false"
   showTailLog: "false"
-  locations: "azure-east-au-1"
+  locations: "azure-east-au-1, ap-south-1"
   dedicatedIP: "true"
   
 on: push
