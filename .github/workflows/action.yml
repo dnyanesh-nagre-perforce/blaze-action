@@ -5,7 +5,7 @@ env:
   testID: "13797457"
   continuePipeline: "false"
   showTailLog: "false"
-  Uploadfilechk: "true"
+  uploadFileCheck: "true"
   inputstartfile: "https://github.com/dnyanesh-nagre-perforce/blaze-action/blob/main/taurus.yml"
   
 on: push
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: PerforceAction
-        uses: dnyanesh-nagre-perforce/blaze-action@v2.2
+        uses: dnyanesh-nagre-perforce/blaze-action@v2.3
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
@@ -24,5 +24,5 @@ jobs:
           testID: ${{env.testID}}
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
-          Uploadfilechk: ${{env.Uploadfilechk}}
+          uploadFileCheck: ${{env.uploadFileCheck}}
           inputstartfile: ${{env.inputstartfile}}
