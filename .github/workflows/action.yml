@@ -6,7 +6,7 @@ env:
   continuePipeline: "false"
   showTailLog: "false"
   uploadFileCheck: "true"
-  inputAllFiles: "https://github.com/dnyanesh-nagre-perforce/blaze-action/blob/main/taurus.yml"
+  inputstartfile: "https://github.com/dnyanesh-nagre-perforce/blaze-action/blob/main/taurus.yml"
   
 on: push
 jobs:
@@ -25,4 +25,4 @@ jobs:
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
-          inputAllFiles: ${{env.inputAllFiles}}
+          inputstartfile: ${{env.inputstartfile}}
