@@ -28,4 +28,4 @@ jobs:
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
-          inputstartfile: $FILE_PATH
+          inputstartfile: ${{ github.workspace }}/taurus_1.yml
