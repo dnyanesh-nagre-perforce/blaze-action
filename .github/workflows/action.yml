@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: Set Environment Variable
-        run: echo "FILE_PATH=https://github.com/dnyanesh-nagre-perforce/blaze-action/blob/2687d8b93417112f567b30cdc28f4819983855ed/.github/workflows/taurus_1.yml" >> $GITHUB_ENV
+        run: echo "FILE_PATH=.github/workflows/taurus_1.yml" >> $GITHUB_ENV
       - name: PerforceAction
         uses: dnyanesh-nagre-perforce/blaze-action@v2.6
         id: run-test
