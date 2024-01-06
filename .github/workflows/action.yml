@@ -6,7 +6,7 @@ env:
   continuePipeline: "false"
   showTailLog: "false"
   uploadFileCheck: "true"
-  inputstartfile: "taurus_1.yml"
+  inputstartfile: "https://github.com/dnyanesh-nagre-perforce/blaze-action/blob/2687d8b93417112f567b30cdc28f4819983855ed/.github/workflows/taurus_1.yml"
   
 on: push
 jobs:
