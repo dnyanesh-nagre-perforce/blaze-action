@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
-      - name: Set Environment Variable
-        run: echo "FILE_PATH=.github/workflows/taurus_1.yml" >> $GITHUB_ENV
       - name: PerforceAction
         uses: dnyanesh-nagre-perforce/blaze-action@v2.6
         id: run-test
@@ -26,4 +24,4 @@ jobs:
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
-          inputstartfile: $FILE_PATH
+          inputstartfile: "taurus_1.yml"
