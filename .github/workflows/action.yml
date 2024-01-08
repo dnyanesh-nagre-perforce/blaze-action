@@ -18,7 +18,7 @@ jobs:
       - name: List Files
         run: ls -R
       - name: Set Environment Variable
-        run: echo "FILE_PATH=taurus_1.yml" >> $GITHUB_ENV
+        run: echo ${{github.workspace}}
       - name: PerforceAction
         uses: dnyanesh-nagre-perforce/blaze-action@v2.6
         id: run-test
@@ -29,4 +29,4 @@ jobs:
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
-          inputstartfile: ${{github.workspace}}${{env.inputstartfile}}
+          inputstartfile: ${{.:github.workspace}}/${{env.inputstartfile}}
