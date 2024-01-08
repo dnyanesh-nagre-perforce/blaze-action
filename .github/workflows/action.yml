@@ -6,7 +6,7 @@ env:
   continuePipeline: "false"
   showTailLog: "false"
   uploadFileCheck: "true"
-  inputstartfile: "taurus_1.yml"
+  inputstartfile: "../taurus_1.yml"
   
 on: push
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: List Files
-        run: ls -R /github/workspace/
+        run: pwd
       - name: Set Environment Variable
         run: echo ${{github.workspace}}
       - name: PerforceAction
