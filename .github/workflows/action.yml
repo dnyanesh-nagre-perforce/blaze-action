@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: List Files
-        run: pwd
+        run: ls -R pwd
       - name: Set Environment Variable
         run: echo ${{github.workspace}}
       - name: PerforceAction
