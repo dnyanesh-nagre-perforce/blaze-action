@@ -6,7 +6,7 @@ env:
   continuePipeline: "false"
   showTailLog: "false"
   uploadFileCheck: "true"
-  inputstartfile: "../taurus_1.yml"
+  inputstartfile: "taurus_1.yml"
   
 on: push
 jobs:
@@ -29,4 +29,4 @@ jobs:
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
-          inputstartfile: ${{github.workspace}}/${{env.inputstartfile}}
+          inputstartfile: $pwd/${{env.inputstartfile}}
