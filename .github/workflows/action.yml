@@ -29,4 +29,4 @@ jobs:
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
-          inputstartfile: $pwd/${{env.inputstartfile}}
+          inputstartfile: ${{env.inputstartfile}}
