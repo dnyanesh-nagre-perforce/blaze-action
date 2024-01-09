@@ -7,7 +7,7 @@ env:
   showTailLog: "false"
   uploadFileCheck: "true"
   inputStartFile: "taurus_1.yml"
-  envVariable: '{"concurrency":"10","hold-for":"8m","ramp-up": "4m"}'
+  envVariable: '{"concurrency":"100","hold-for":"2m","ramp-up": "1m"}'
   testRunByTestName: "true"
   testName: "Untitled test January_05_1:45 PM"
   projectID: "430125"
