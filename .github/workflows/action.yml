@@ -20,7 +20,7 @@ jobs:
       - name: Set Environment Variable
         run: echo ${{github.workspace}}
       - name: PerforceAction
-        uses: dnyanesh-nagre-perforce/blaze-action@v2.6
+        uses: dnyanesh-nagre-perforce/blaze-action@v2.9
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
