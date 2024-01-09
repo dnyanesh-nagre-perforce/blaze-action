@@ -7,6 +7,7 @@ env:
   showTailLog: "false"
   uploadFileCheck: "true"
   inputStartFile: "taurus_1.yml"
+  envVariable: '{"concurrency":"10","hold-for":"8","ramp-up": "4"}'
   
 on: push
 jobs:
@@ -31,3 +32,4 @@ jobs:
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
           inputstartfile: ${{env.inputStartFile}}
+          envVariable: ${{env.envVariable}}
