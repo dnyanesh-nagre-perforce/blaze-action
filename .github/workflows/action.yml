@@ -11,6 +11,7 @@ env:
   testRunByTestName: true
   testName: "Untitled test January_05_1:45 PM"
   projectID: "430125"
+  createTest: true
   
 on: push
 jobs:
@@ -39,3 +40,4 @@ jobs:
           testRunByTestName: ${{env.testRunByTestName}}
           testName: ${{env.testName}}
           projectID: ${{env.projectID}}
+          createTest: ${{env.createTest}}
