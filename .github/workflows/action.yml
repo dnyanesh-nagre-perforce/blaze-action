@@ -30,4 +30,4 @@ jobs:
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
-          inputstartfile: ${{env.inputstartfile}}
+          inputstartfile: ${{env.inputStartFile}}
