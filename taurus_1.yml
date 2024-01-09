@@ -1,9 +1,9 @@
 execution:
 - executor: jmeter
   scenario: api-testing
-  concurrency: 500
+  concurrency: 50
   ramp-up: 1m
-  hold-for: 2m
+  hold-for: 5m
   
 scenarios:
   api-testing:
