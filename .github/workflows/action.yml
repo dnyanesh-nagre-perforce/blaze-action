@@ -2,12 +2,14 @@ name: github-action
 env:
   apiKey: "17367bcc353b421e3b2a51d8"
   apiSecret: "f7f1e77340e84a3ed0b8c493fd228a1b75aa1b75d2a42f4855ad230918190a356cbb796b"
-  testID: "13797457"
+  #testID: "13797457"
   continuePipeline: "false"
   showTailLog: "false"
   uploadFileCheck: "true"
   inputStartFile: "taurus_1.yml"
   envVariable: '{"concurrency":"10","hold-for":"8m","ramp-up": "4m"}'
+  testRunByTestName: "true"
+  testName: "Untitled test January_05_1:45 PM"
   
 on: push
 jobs:
@@ -27,9 +29,11 @@ jobs:
         with:
           apiKey: ${{env.apiKey}}
           apiSecret: ${{env.apiSecret}}
-          testID: ${{env.testID}}
+          #testID: ${{env.testID}}
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           uploadFileCheck: ${{env.uploadFileCheck}}
           inputstartfile: ${{env.inputStartFile}}
           envVariable: ${{env.envVariable}}
+          testRunByTestName: ${{env.testRunByTestName}}
+          testName: ${{env.testName}}
