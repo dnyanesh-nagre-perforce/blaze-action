@@ -10,6 +10,7 @@ env:
   #envVariable: '{"concurrency":"10","hold-for":"3m","ramp-up": "2m"}'
   #testRunByTestName: true
   #testName: "Untitled test January_05_1:45 PM"
+  testName: "Hello From Action"
   projectID: "430125"
   createTest: true
   
@@ -38,6 +39,6 @@ jobs:
           inputstartfile: ${{env.inputStartFile}}
           envVariable: ${{env.envVariable}}
           # testRunByTestName: ${{env.testRunByTestName}}
-          #testName: ${{env.testName}}
+          testName: ${{env.testName}}
           projectID: ${{env.projectID}}
           createTest: ${{env.createTest}}
