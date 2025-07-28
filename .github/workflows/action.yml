@@ -7,13 +7,16 @@ env:
   showTailLog: false
   uploadFileCheck: "true"
   inputStartFile: "taurus_1.yml"
-  envVariable: '{"concurrency":"32","hold-for":"5m","ramp-up": "2m", "steps": "4"}'
+  # envVariable: '{"concurrency":"32","hold-for":"5m","ramp-up": "2m", "steps": "4"}'
   #testRunByTestName: true
   #testName: "Untitled test January_05_1:45 PM"
   # testName: "Hello From Action"
   testID: "13744261"
   projectID: "1478138"
   createTest: "false"
+  totalUsers: "32"
+  duration: "5"
+  rampUp: "2"
   
 on: push
 jobs:
@@ -38,8 +41,11 @@ jobs:
           # showTailLog: ${{env.showTailLog}}
           # uploadFileCheck: ${{env.uploadFileCheck}}
           # inputstartfile: ${{env.inputStartFile}}
-          envVariable: ${{env.envVariable}}
+          # envVariable: ${{env.envVariable}}
           # testRunByTestName: ${{env.testRunByTestName}}
           testID: ${{env.testID}}
           projectID: ${{env.projectID}}
           createTest: ${{env.createTest}}
+          totalUsers: "32"
+          duration: "5"
+          rampUp: "2"
