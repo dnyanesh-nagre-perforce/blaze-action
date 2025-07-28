@@ -58,7 +58,7 @@ jobs:
           rampUp: ${{env.rampUp}}
           steps: ${{env.steps}}
           throughput: ${{env.throughput}}
-          # disableLoadConfig: ${{env.disableLoadConfig}}
+          disableLoadConfig: ${{env.disableLoadConfig}}
           # concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
           # iterationsEnabled: ${{env.iterationsEnabled}}
           # iterations: ${{env.iterations}}
