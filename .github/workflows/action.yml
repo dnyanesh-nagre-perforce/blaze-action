@@ -25,7 +25,7 @@ jobs:
         run: ls $pwd
       - name: Set Environment Variable
         run: echo ${{github.workspace}}
-      - name: PerforceAction
+      - name: HelloTestAction
         #uses: dnyanesh-nagre-perforce/blaze-action@v2.14
         uses: dnyanesh-nagre-perforce/blaze-action@v3.0.0
         id: run-test
