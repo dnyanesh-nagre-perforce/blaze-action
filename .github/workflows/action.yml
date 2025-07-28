@@ -17,6 +17,7 @@ env:
   totalUsers: "32"
   duration: "5"
   rampUp: "2"
+  steps: "4"
   
 on: push
 jobs:
@@ -44,9 +45,9 @@ jobs:
           # envVariable: ${{env.envVariable}}
           # testRunByTestName: ${{env.testRunByTestName}}
           testID: ${{env.testID}}
-          projectID: ${{env.projectID}}
-          createTest: ${{env.createTest}}
-          totalUsers: "32"
-          duration: "5"
-          rampUp: "2"
-          steps: "4"
+          # projectID: ${{env.projectID}}
+          # createTest: ${{env.createTest}}
+          totalUsers: ${{env.totalUsers}}
+          duration: ${{env.duration}}
+          rampUp: ${{env.rampUp}}
+          steps: ${{env.steps}}
