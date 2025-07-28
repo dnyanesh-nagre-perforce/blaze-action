@@ -14,7 +14,7 @@ env:
   testID: "13744261"
   projectID: "1478138"
   createTest: "false"
-  totalUsers: "32"
+  totalUsers: "34"
   duration: "5"
   rampUp: "2"
   steps: "4"
@@ -51,5 +51,5 @@ jobs:
           totalUsers: ${{env.totalUsers}}
           duration: ${{env.duration}}
           rampUp: ${{env.rampUp}}
-          steps: ${{env.steps}}
-          throughput: ${{env.throughput}}
+          # steps: ${{env.steps}}
+          # throughput: ${{env.throughput}}
