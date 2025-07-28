@@ -49,3 +49,4 @@ jobs:
           totalUsers: "32"
           duration: "5"
           rampUp: "2"
+          steps: "4"
