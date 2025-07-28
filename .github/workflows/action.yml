@@ -21,6 +21,8 @@ env:
   throughput: "7"
   disableLoadConfig: "false"
   concurrencyControlEnabled: "true"
+  iterationsEnabled: "true"
+  iterations: "4"
   
 on: push
 jobs:
@@ -50,10 +52,12 @@ jobs:
           testID: ${{env.testID}}
           # projectID: ${{env.projectID}}
           # createTest: ${{env.createTest}}
-          totalUsers: ${{env.totalUsers}}
+          # totalUsers: ${{env.totalUsers}}
           # duration: ${{env.duration}}
           # rampUp: ${{env.rampUp}}
           # steps: ${{env.steps}}
           # throughput: ${{env.throughput}}
           # disableLoadConfig: ${{env.disableLoadConfig}}
           # concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
+          iterationsEnabled: ${{env.iterationsEnabled}}
+          iterations: ${{env.iterations}}
