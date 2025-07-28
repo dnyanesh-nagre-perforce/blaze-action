@@ -37,7 +37,7 @@ jobs:
         run: echo ${{env.steps}}
       - name: HelloTestAction
         #uses: dnyanesh-nagre-perforce/blaze-action@v2.14
-        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.7
+        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.8
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
