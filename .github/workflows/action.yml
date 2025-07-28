@@ -17,9 +17,10 @@ env:
   totalUsers: "34"
   duration: "5"
   rampUp: "2"
-  steps: "2"
-  throughput: "4"
-  # disableLoadConfig: "true"
+  steps: "3"
+  throughput: "7"
+  disableLoadConfig: "true"
+  concurrencyControlEnabled: "false"
   
 on: push
 jobs:
@@ -54,4 +55,5 @@ jobs:
           # rampUp: ${{env.rampUp}}
           steps: ${{env.steps}}
           throughput: ${{env.throughput}}
-          # disableLoadConfig: ${{env.disableLoadConfig}}
+          disableLoadConfig: ${{env.disableLoadConfig}}
+          # concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
