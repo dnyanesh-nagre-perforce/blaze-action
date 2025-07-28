@@ -14,7 +14,7 @@ env:
   testID: "13744261"
   projectID: "1478138"
   createTest: "false"
-  totalUsers: "34"
+  totalUsers: "19"
   duration: "5"
   rampUp: "2"
   steps: "3"
@@ -50,10 +50,10 @@ jobs:
           testID: ${{env.testID}}
           # projectID: ${{env.projectID}}
           # createTest: ${{env.createTest}}
-          # totalUsers: ${{env.totalUsers}}
+          totalUsers: ${{env.totalUsers}}
           # duration: ${{env.duration}}
           # rampUp: ${{env.rampUp}}
           # steps: ${{env.steps}}
           # throughput: ${{env.throughput}}
           # disableLoadConfig: ${{env.disableLoadConfig}}
-          concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
+          # concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
