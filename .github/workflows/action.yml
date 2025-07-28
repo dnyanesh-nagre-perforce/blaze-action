@@ -6,10 +6,10 @@ env:
   continuePipeline: "false"
   showTailLog: false
   uploadFileCheck: "true"
-  inputStartFile: "taurus_1.yml"
+  inputStartFile: "demo.jmx"
   # envVariable: '{"concurrency":"32","hold-for":"5m","ramp-up": "2m", "steps": "4"}'
   #testRunByTestName: true
-  #testName: "Untitled test January_05_1:45 PM"
+  testName: "via GitHub Action"
   # testName: "Hello From Action"
   testID: "13744261"
   projectID: "1478138"
@@ -37,7 +37,7 @@ jobs:
         run: echo ${{env.steps}}
       - name: HelloTestAction
         #uses: dnyanesh-nagre-perforce/blaze-action@v2.14
-        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.5
+        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.6
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
@@ -49,7 +49,8 @@ jobs:
           inputstartfile: ${{env.inputStartFile}}
           # envVariable: ${{env.envVariable}}
           # testRunByTestName: ${{env.testRunByTestName}}
-          testID: ${{env.testID}}
+          # testID: ${{env.testID}}
+          testName: ${{env.testName}}
           projectID: ${{env.projectID}}
           createTest: ${{env.createTest}}
           totalUsers: ${{env.totalUsers}}
