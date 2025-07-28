@@ -37,7 +37,7 @@ jobs:
         run: echo ${{env.steps}}
       - name: HelloTestAction
         #uses: dnyanesh-nagre-perforce/blaze-action@v2.14
-        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.6
+        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.7
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
@@ -59,6 +59,6 @@ jobs:
           steps: ${{env.steps}}
           throughput: ${{env.throughput}}
           disableLoadConfig: ${{env.disableLoadConfig}}
-          # concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
+          concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
           # iterationsEnabled: ${{env.iterationsEnabled}}
           # iterations: ${{env.iterations}}
