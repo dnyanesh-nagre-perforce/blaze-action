@@ -18,6 +18,7 @@ env:
   duration: "5"
   rampUp: "2"
   steps: "4"
+  throughput: "1"
   
 on: push
 jobs:
@@ -51,3 +52,4 @@ jobs:
           duration: ${{env.duration}}
           rampUp: ${{env.rampUp}}
           steps: ${{env.steps}}
+          throughput: ${{env.throughput}}
