@@ -19,6 +19,7 @@ env:
   rampUp: "2"
   steps: "4"
   throughput: "1"
+  disableLoadConfig: "true"
   
 on: push
 jobs:
@@ -48,8 +49,9 @@ jobs:
           testID: ${{env.testID}}
           # projectID: ${{env.projectID}}
           # createTest: ${{env.createTest}}
-          totalUsers: ${{env.totalUsers}}
-          duration: ${{env.duration}}
-          rampUp: ${{env.rampUp}}
+          # totalUsers: ${{env.totalUsers}}
+          # duration: ${{env.duration}}
+          # rampUp: ${{env.rampUp}}
           # steps: ${{env.steps}}
           # throughput: ${{env.throughput}}
+          disableLoadConfig: ${{env.disableLoadConfig}}
