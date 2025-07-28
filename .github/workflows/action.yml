@@ -21,7 +21,7 @@ env:
   throughput: "7"
   disableLoadConfig: "false"
   concurrencyControlEnabled: "true"
-  iterationsEnabled: "true"
+  iterationsEnabled: "false"
   iterations: "4"
   
 on: push
@@ -43,7 +43,7 @@ jobs:
           apiKey: ${{env.apiKey}}
           apiSecret: ${{env.apiSecret}}
           #testID: ${{env.testID}}
-          # continuePipeline: ${{env.continuePipeline}}
+          continuePipeline: ${{env.continuePipeline}}
           # showTailLog: ${{env.showTailLog}}
           # uploadFileCheck: ${{env.uploadFileCheck}}
           # inputstartfile: ${{env.inputStartFile}}
@@ -53,7 +53,7 @@ jobs:
           # projectID: ${{env.projectID}}
           # createTest: ${{env.createTest}}
           # totalUsers: ${{env.totalUsers}}
-          # duration: ${{env.duration}}
+          duration: ${{env.duration}}
           # rampUp: ${{env.rampUp}}
           # steps: ${{env.steps}}
           # throughput: ${{env.throughput}}
