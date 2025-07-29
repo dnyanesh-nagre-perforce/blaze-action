@@ -13,7 +13,7 @@ env:
   # testName: "Hello From Action"
   testID: "13744261"
   projectID: "1478138"
-  createTest: "false"
+  createTest: "true"
   totalUsers: "19"
   duration: "5"
   rampUp: "2"
@@ -35,9 +35,11 @@ jobs:
         run: ls $pwd
       - name: Set Environment Variable
         run: echo ${{env.steps}}
-      - name: HelloTestAction
+      - name: BlazeRunnerAction
+        uses: Blazemeter/github-action@v8.6
+      # - name: HelloTestAction
         #uses: dnyanesh-nagre-perforce/blaze-action@v2.14
-        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.24
+        # uses: dnyanesh-nagre-perforce/blaze-action@v3.0.24
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
@@ -45,13 +47,13 @@ jobs:
           #testID: ${{env.testID}}
           # continuePipeline: ${{env.continuePipeline}}
           # showTailLog: ${{env.showTailLog}}
-          # uploadFileCheck: ${{env.uploadFileCheck}}
-          # inputstartfile: ${{env.inputStartFile}}
+          uploadFileCheck: ${{env.uploadFileCheck}}
+          inputstartfile: ${{env.inputStartFile}}
           # envVariable: ${{env.envVariable}}
           # testRunByTestName: ${{env.testRunByTestName}}
-          testID: ${{env.testID}}
-          # testName: ${{env.testName}}
-          # projectID: ${{env.projectID}}
+          # testID: ${{env.testID}}
+          testName: ${{env.testName}}
+          projectID: ${{env.projectID}}
           createTest: ${{env.createTest}}
           totalUsers: ${{env.totalUsers}}
           duration: ${{env.duration}}
