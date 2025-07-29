@@ -21,7 +21,7 @@ env:
   throughput: "7"
   disableLoadConfig: "false"
   concurrencyControlEnabled: "false"
-  iterationsEnabled: "false"
+  iterationsEnabled: "true"
   iterations: "4"
   
 on: push
