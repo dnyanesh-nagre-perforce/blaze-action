@@ -14,14 +14,14 @@ env:
   testID: "13744261"
   projectID: "1478138"
   createTest: "false"
-  totalUsers: "17"
+  totalUsers: "19"
   duration: "5"
   rampUp: "2"
   steps: "3"
   throughput: "7"
   disableLoadConfig: "true"
   concurrencyControlEnabled: "false"
-  iterationsEnabled: "true"
+  iterationsEnabled: "false"
   iterations: "4"
   
 on: push
