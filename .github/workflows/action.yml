@@ -14,7 +14,7 @@ env:
   testID: "13744261"
   projectID: "1478138"
   createTest: "false"
-  totalUsers: "29"
+  totalUsers: "39"
   duration: "4"
   rampUp: "2"
   steps: "0"
@@ -22,7 +22,7 @@ env:
   disableLoadConfig: "false"
   concurrencyControlEnabled: "true"
   iterationsEnabled: "true"
-  iterations: "4"
+  iterations: "1"
   
 on: push
 jobs:
@@ -47,8 +47,8 @@ jobs:
           #testID: ${{env.testID}}
           # continuePipeline: ${{env.continuePipeline}}
           # showTailLog: ${{env.showTailLog}}
-          # uploadFileCheck: ${{env.uploadFileCheck}}
-          # inputstartfile: ${{env.inputStartFile}}
+          uploadFileCheck: ${{env.uploadFileCheck}}
+          inputstartfile: ${{env.inputStartFile}}
           # envVariable: ${{env.envVariable}}
           # testRunByTestName: ${{env.testRunByTestName}}
           testID: ${{env.testID}}
