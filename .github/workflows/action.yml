@@ -6,7 +6,7 @@ env:
   continuePipeline: "false"
   showTailLog: false
   uploadFileCheck: "true"
-  inputStartFile: "demo.jmx"
+  inputStartFile: ".github/workflows/demo.jmx"
   # envVariable: '{"concurrency":"32","hold-for":"5m","ramp-up": "2m", "steps": "4"}'
   #testRunByTestName: true
   testName: "via GitHub Action"
