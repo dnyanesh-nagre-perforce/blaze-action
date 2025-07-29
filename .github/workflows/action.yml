@@ -9,7 +9,7 @@ env:
   inputStartFile: ".github/workflows/demo.jmx"
   # envVariable: '{"concurrency":"32","hold-for":"5m","ramp-up": "2m", "steps": "4"}'
   #testRunByTestName: true
-  testName: "via GitHub Action-1313"
+  testName: "via GitHub Action-1414"
   # testName: "Hello From Action"
   testID: "13744261"
   projectID: "1478138"
@@ -19,7 +19,7 @@ env:
   rampUp: "2"
   steps: "3"
   throughput: "7"
-  disableLoadConfig: "false"
+  disableLoadConfig: "true"
   concurrencyControlEnabled: "false"
   iterationsEnabled: "true"
   iterations: "4"
@@ -37,7 +37,7 @@ jobs:
         run: echo ${{env.steps}}
       - name: HelloTestAction
         #uses: dnyanesh-nagre-perforce/blaze-action@v2.14
-        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.21
+        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.22
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
