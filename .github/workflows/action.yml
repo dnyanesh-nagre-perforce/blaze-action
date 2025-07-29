@@ -14,7 +14,7 @@ env:
   testID: "13744261"
   projectID: "1478138"
   createTest: "false"
-  totalUsers: "19"
+  totalUsers: "47"
   duration: "5"
   rampUp: "2"
   steps: "3"
