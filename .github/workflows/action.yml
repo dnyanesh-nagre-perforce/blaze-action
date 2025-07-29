@@ -9,7 +9,7 @@ env:
   inputStartFile: ".github/workflows/demo.jmx"
   # envVariable: '{"concurrency":"32","hold-for":"5m","ramp-up": "2m", "steps": "4"}'
   #testRunByTestName: true
-  testName: "via GitHub Action-16"
+  testName: "via GitHub Action-17"
   # testName: "Hello From Action"
   testID: "13744261"
   projectID: "1478138"
@@ -19,8 +19,8 @@ env:
   rampUp: "2"
   steps: "3"
   throughput: "7"
-  disableLoadConfig: "true"
-  concurrencyControlEnabled: "false"
+  disableLoadConfig: "false"
+  concurrencyControlEnabled: "true"
   iterationsEnabled: "true"
   iterations: "4"
   
