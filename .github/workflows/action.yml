@@ -36,11 +36,10 @@ jobs:
         run: ls $pwd
       - name: Set Environment Variable
         run: echo ${{env.steps}}
-      - name: BlazeRunnerAction
-        uses: Blazemeter/github-action@v8.6
-      # - name: HelloTestAction
-        #uses: dnyanesh-nagre-perforce/blaze-action@v2.14
-        # uses: dnyanesh-nagre-perforce/blaze-action@v3.0.24
+      # - name: BlazeRunnerAction
+      #   uses: Blazemeter/github-action@v8.6
+      - name: HelloTestAction
+        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.25
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
