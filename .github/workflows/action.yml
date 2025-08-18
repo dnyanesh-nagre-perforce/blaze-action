@@ -23,7 +23,7 @@ env:
   concurrencyControlEnabled: "true"
   iterationsEnabled: "true"
   iterations: "1"
-  locations: "eu-central-1"
+  locations: "my_k8s_OPL"
   
 on: push
 jobs:
