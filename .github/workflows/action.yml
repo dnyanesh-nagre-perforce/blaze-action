@@ -39,7 +39,7 @@ jobs:
       # - name: BlazeRunnerAction
       #   uses: Blazemeter/github-action@v8.6
       - name: HelloTestAction
-        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.28
+        uses: dnyanesh-nagre-perforce/blaze-action@v3.0.29
         id: run-test
         with:
           apiKey: ${{env.apiKey}}
