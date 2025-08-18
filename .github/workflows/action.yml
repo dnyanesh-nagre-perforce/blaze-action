@@ -23,6 +23,7 @@ env:
   concurrencyControlEnabled: "true"
   iterationsEnabled: "true"
   iterations: "1"
+  locations: "EU Central (Frankfurt)"
   
 on: push
 jobs:
@@ -64,3 +65,4 @@ jobs:
           concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
           iterationsEnabled: ${{env.iterationsEnabled}}
           iterations: ${{env.iterations}}
+          locations: ${{env.locations}}
