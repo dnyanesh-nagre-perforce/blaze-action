@@ -23,7 +23,7 @@ env:
   concurrencyControlEnabled: "true"
   iterationsEnabled: "true"
   iterations: "1"
-  locations: "661f7af50d8f6f8f0d014359"
+  locations: "harbor-661f7af50d8f6f8f0d014359"
   
 on: push
 jobs:
