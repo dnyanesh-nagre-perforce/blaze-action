@@ -1,7 +1,7 @@
 name: github-action
 env:
-  apiKey: ""
-  apiSecret: ""
+  apiKey: "3ee88ae5819c48e5e7555553"
+  apiSecret: "b008253a717d32a3e69b4e6c5eaa46a4937c8b17ddfb30834b8c13e34b2b4e5a273c421c"
   #testID: "13797457"
   continuePipeline: "false"
   showTailLog: false
@@ -15,9 +15,9 @@ env:
   projectID: "1478138"
   createTest: "false"
   totalUsers: "39"
-  runExistingBucketLevelTest: "true"
+  runExistingBucketLevelTest: "false"
   triggerUrl: "https://api.runscope.com/radar/bucket/caf5cb14-bab6-47e0-a0c8-5dc259143a94/trigger"
-  apiToken: "50e9c3ae-88a2-4763-bbf1-9182a9d79b13"
+  apiToken: ""
   duration: "4"
   rampUp: "2"
   steps: "0"
@@ -45,11 +45,11 @@ jobs:
         uses: dnyanesh-nagre-perforce/blaze-action@v4.0.1
         id: run-test
         with:
-          #apiKey: ${{env.apiKey}}
-          #apiSecret: ${{env.apiSecret}}
-          #testID: ${{env.testID}}
-          # continuePipeline: ${{env.continuePipeline}}
-          # showTailLog: ${{env.showTailLog}}
+          apiKey: ${{env.apiKey}}
+          apiSecret: ${{env.apiSecret}}
+          testID: ${{env.testID}}
+          continuePipeline: ${{env.continuePipeline}}
+          showTailLog: ${{env.showTailLog}}
           #uploadFileCheck: ${{env.uploadFileCheck}}
           #inputstartfile: ${{env.inputStartFile}}
           # envVariable: ${{env.envVariable}}
@@ -57,7 +57,7 @@ jobs:
           #testID: ${{env.testID}}
           # testName: ${{env.testName}}
           #projectID: ${{env.projectID}}
-          #createTest: ${{env.createTest}}
+          createTest: ${{env.createTest}}
           #totalUsers: ${{env.totalUsers}}
           #duration: ${{env.duration}}
           #rampUp: ${{env.rampUp}}
@@ -68,6 +68,6 @@ jobs:
           #iterationsEnabled: ${{env.iterationsEnabled}}
           #iterations: ${{env.iterations}}
           locations: ${{env.locations}}
-          apiToken: ${{env.apiToken}}
-          triggerUrl: ${{env.triggerUrl}}
-          runExistingBucketLevelTest: ${{env.runExistingBucketLevelTest}}
+          #apiToken: ${{env.apiToken}}
+          #triggerUrl: ${{env.triggerUrl}}
+          #runExistingBucketLevelTest: ${{env.runExistingBucketLevelTest}}
