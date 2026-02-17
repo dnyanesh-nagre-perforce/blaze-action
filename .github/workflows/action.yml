@@ -15,8 +15,8 @@ env:
   projectID: "1478138"
   createTest: "false"
   totalUsers: "39"
-  runExistingAPITest: "true"
-  triggerUrl: "https://api.runscope.com/radar/fd2137ce-5549-4cb1-8d29-8ccd38a2fd97/trigger?runscope_environment=509c3250-3113-4574-ada6-170136e05293"
+  runExistingBucketLevelTest: "true"
+  triggerUrl: "https://api.runscope.com/radar/bucket/caf5cb14-bab6-47e0-a0c8-5dc259143a94/trigger"
   apiToken: "50e9c3ae-88a2-4763-bbf1-9182a9d79b13"
   duration: "4"
   rampUp: "2"
@@ -70,4 +70,4 @@ jobs:
           locations: ${{env.locations}}
           apiToken: ${{env.apiToken}}
           triggerUrl: ${{env.triggerUrl}}
-          runExistingAPITest: ${{env.runExistingAPITest}}
+          runExistingBucketLevelTest: ${{env.runExistingBucketLevelTest}}
