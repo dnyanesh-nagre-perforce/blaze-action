@@ -67,7 +67,7 @@ jobs:
           #concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
           #iterationsEnabled: ${{env.iterationsEnabled}}
           #iterations: ${{env.iterations}}
-          #locations: ${{env.locations}}
+          locations: ${{env.locations}}
           apiToken: ${{env.apiToken}}
           triggerUrl: ${{env.triggerUrl}}
           runExistingAPITest: ${{env.runExistingAPITest}}
