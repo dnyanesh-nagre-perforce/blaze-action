@@ -15,7 +15,7 @@ env:
   projectID: "1478138"
   createTest: "false"
   totalUsers: "39"
-  runExistingBucketLevelTest: "false"
+  runExistingBucketLevelTest: "true"
   triggerUrl: "https://api.runscope.com/radar/bucket/caf5cb14-bab6-47e0-a0c8-5dc259143a94/trigger"
   apiToken: ${{ secrets.BZM_APIM_TOKEN }}
   duration: "4"
