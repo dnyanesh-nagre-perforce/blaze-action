@@ -17,6 +17,7 @@ env:
   totalUsers: "39"
   runExistingAPITest: "true"
   triggerUrl: "https://api.runscope.com/radar/fd2137ce-5549-4cb1-8d29-8ccd38a2fd97/trigger?runscope_environment=509c3250-3113-4574-ada6-170136e05293"
+  apiToken: ""
   duration: "4"
   rampUp: "2"
   steps: "0"
@@ -44,8 +45,8 @@ jobs:
       #   uses: dnyanesh-nagre-perforce/blaze-action@v3.0.29
         id: run-test
         with:
-          apiKey: ${{env.apiKey}}
-          apiSecret: ${{env.apiSecret}}
+          #apiKey: ${{env.apiKey}}
+          #apiSecret: ${{env.apiSecret}}
           #testID: ${{env.testID}}
           # continuePipeline: ${{env.continuePipeline}}
           # showTailLog: ${{env.showTailLog}}
@@ -53,7 +54,7 @@ jobs:
           #inputstartfile: ${{env.inputStartFile}}
           # envVariable: ${{env.envVariable}}
           # testRunByTestName: ${{env.testRunByTestName}}
-          testID: ${{env.testID}}
+          #testID: ${{env.testID}}
           # testName: ${{env.testName}}
           #projectID: ${{env.projectID}}
           #createTest: ${{env.createTest}}
@@ -67,3 +68,6 @@ jobs:
           #iterationsEnabled: ${{env.iterationsEnabled}}
           #iterations: ${{env.iterations}}
           #locations: ${{env.locations}}
+          apiToken: ${{env.apiToken}}
+          triggerUrl: ${{env.triggerUrl}}
+          runExistingAPITest: ${{env.runExistingAPITest}}
