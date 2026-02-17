@@ -17,7 +17,7 @@ env:
   totalUsers: "39"
   runExistingBucketLevelTest: "false"
   triggerUrl: "https://api.runscope.com/radar/bucket/caf5cb14-bab6-47e0-a0c8-5dc259143a94/trigger"
-  apiToken: ""
+  apiToken: ${{ secrets.BZM_APIM_TOKEN }}
   duration: "4"
   rampUp: "2"
   steps: "0"
@@ -45,11 +45,11 @@ jobs:
         uses: dnyanesh-nagre-perforce/blaze-action@v4.0.1
         id: run-test
         with:
-          apiKey: ${{env.apiKey}}
-          apiSecret: ${{env.apiSecret}}
-          testID: ${{env.testID}}
-          continuePipeline: ${{env.continuePipeline}}
-          showTailLog: ${{env.showTailLog}}
+          #apiKey: ${{env.apiKey}}
+          #apiSecret: ${{env.apiSecret}}
+          #testID: ${{env.testID}}
+          #continuePipeline: ${{env.continuePipeline}}
+          #showTailLog: ${{env.showTailLog}}
           #uploadFileCheck: ${{env.uploadFileCheck}}
           #inputstartfile: ${{env.inputStartFile}}
           # envVariable: ${{env.envVariable}}
@@ -57,7 +57,7 @@ jobs:
           #testID: ${{env.testID}}
           # testName: ${{env.testName}}
           #projectID: ${{env.projectID}}
-          createTest: ${{env.createTest}}
+          #createTest: ${{env.createTest}}
           #totalUsers: ${{env.totalUsers}}
           #duration: ${{env.duration}}
           #rampUp: ${{env.rampUp}}
@@ -68,6 +68,6 @@ jobs:
           #iterationsEnabled: ${{env.iterationsEnabled}}
           #iterations: ${{env.iterations}}
           locations: ${{env.locations}}
-          #apiToken: ${{env.apiToken}}
-          #triggerUrl: ${{env.triggerUrl}}
-          #runExistingBucketLevelTest: ${{env.runExistingBucketLevelTest}}
+          apiToken: ${{env.apiToken}}
+          triggerUrl: ${{env.triggerUrl}}
+          runExistingBucketLevelTest: ${{env.runExistingBucketLevelTest}}
