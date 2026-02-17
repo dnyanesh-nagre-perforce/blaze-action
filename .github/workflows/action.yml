@@ -15,6 +15,8 @@ env:
   projectID: "1478138"
   createTest: "false"
   totalUsers: "39"
+  runExistingAPITest: "true"
+  triggerUrl: "https://api.runscope.com/radar/fd2137ce-5549-4cb1-8d29-8ccd38a2fd97/trigger?runscope_environment=509c3250-3113-4574-ada6-170136e05293"
   duration: "4"
   rampUp: "2"
   steps: "0"
