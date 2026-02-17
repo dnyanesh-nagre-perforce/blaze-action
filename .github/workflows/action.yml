@@ -68,6 +68,6 @@ jobs:
           #iterationsEnabled: ${{env.iterationsEnabled}}
           #iterations: ${{env.iterations}}
           #locations: ${{env.locations}}
-          apiToken: "50e9c3ae-88a2-4763-bbf1-9182a9d79b13"
+          apiToken: ""
           triggerUrl: ${{env.triggerUrl}}
           runExistingBucketLevelTest: ${{env.runExistingBucketLevelTest}}
