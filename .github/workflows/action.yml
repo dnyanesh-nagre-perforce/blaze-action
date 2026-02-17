@@ -67,7 +67,7 @@ jobs:
           #concurrencyControlEnabled: ${{env.concurrencyControlEnabled}}
           #iterationsEnabled: ${{env.iterationsEnabled}}
           #iterations: ${{env.iterations}}
-          locations: ${{env.locations}}
-          apiToken: ${{env.apiToken}}
+          #locations: ${{env.locations}}
+          apiToken: ${{secrets.BZM_APIM_TOKEN}}
           triggerUrl: ${{env.triggerUrl}}
           runExistingBucketLevelTest: ${{env.runExistingBucketLevelTest}}
